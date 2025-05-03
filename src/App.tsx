@@ -1,17 +1,21 @@
 import "./App.css";
-import LoginComponent from "./componets/login/login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CadastroFuncionario from "../src/pages/formPage/page";
+import LoginPage from "../src/pages/loginPage/page"; 
+import UserPage from "../src/pages/userPage/page"; 
 import logo from "../src/assets/logoCrud.png";
 
 function App() {
   return (
     <div className="App">
-      <div className="container-logo">
-        <img src={logo} alt="Logo do sistema" />
-        <h2>Plataforma completa para registro e controle de funcionarios</h2>
-      </div>
-      <div className="container-login">
-        <LoginComponent />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/cadastro" element={<CadastroFuncionario />} />
+          <Route path="/usuarios" element={<UserPage  />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

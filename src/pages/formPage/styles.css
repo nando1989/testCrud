@@ -1,0 +1,252 @@
+
+.form-funcionario {
+  width: 100%;
+  margin: 1rem ;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.container-form-all{
+  display: flex;
+  width: 100%;
+  
+  max-height: 100%; 
+}
+
+.container-form{
+  width: 50%;
+  margin: 20px;
+  height: auto;
+  margin: 1rem;
+}
+
+.input-image-product{
+  font-size: small;
+}
+
+
+.form-funcionario h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.image-upload-section{
+  width: 17rem;
+}
+
+.image-preview-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-preview{
+  width: 50%;
+}
+
+
+.btn-upload-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #001a38;
+  color: #ffffff;
+  width: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 1.5rem;
+  border-radius: 22px;
+}
+
+.btn-upload-image:hover{
+  background-color: #002c5c;
+}
+
+.container-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-funcionario label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  display: flex;
+  font-size: 0.75rem;
+ 
+}
+
+.btn-submit{
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #001a38;
+  color: white;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-submit:hover {
+  background-color: #002c5c;
+}
+
+.input-icon{
+  position: absolute;
+  top: 55%;
+  right: 25px;
+  transform: translateY(-50%);
+  color: #b9b9b9;
+  pointer-events: none; /* ícone não atrapalha clique */
+  font-size: 1.2rem;
+}
+
+.input-group-form input,
+.input-group-form select {
+  padding: 0.2rem;
+  font-size: 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  width: 90%;
+  padding: 16px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  background: none;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload:hover {
+  background-color: #0056b3;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-funcionario input:active {
+  border:1px solid #8fc5ff;
+  background-color: #ffff;
+}
+
+.form-funcionario input:hover{
+  border:1px solid #8fc5ff;
+  background-color: #ffff;
+}
+
+.input-group-form {
+  position: relative;
+  
+}
+
+.input-group-form label {
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  font-size: 0.75rem;
+  pointer-events: none;
+  padding: 0 4px;
+  transition: 0.2s ease all;
+  background-color: #ffffff;
+  
+}
+
+.input-group-form input:focus + label,
+.input-group-form input:valid + label {
+  top: -4px;
+  left: 8px;
+  font-size: 12px;
+  color: #1976d2;
+  background-color: #ffff;
+}
+@media (max-width: 950px){
+  .form-funcionario {
+    width: 80%;
+    height: 100%;
+    margin: 1rem ;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+@media (max-width: 650px){
+
+  .form-funcionario {
+    width: 100%;
+    height: auto;
+    margin: 1rem ;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  }
+  .container-form-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .container-form{
+    width: 100%;
+    margin: 20px;
+    height: auto;
+    margin: 0;
+  }
+}

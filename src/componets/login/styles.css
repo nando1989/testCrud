@@ -12,7 +12,6 @@
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid rgb(224, 224, 224);
-    width: ;
     margin-bottom: 8px;
   }
   
@@ -27,6 +26,7 @@
   .login-container h2 {
     text-align:start;
     font-weight: 400;
+    color: #2a2a2b;
   }
 
   .login-container p {

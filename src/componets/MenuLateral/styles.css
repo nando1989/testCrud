@@ -69,6 +69,8 @@
 }
 
 .conteudo-menu ul li{
+  display: flex;
+  
   list-style: none;
   padding: 0;
   background-color: #ffffff;
@@ -88,8 +90,9 @@
   padding: 10px; /* Dá um espaço para clique mais fácil */
   text-decoration: none;
   color:#352626;
-  
-  
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .conteudo-menu ul li:hover {
@@ -133,16 +136,6 @@
   white-space: nowrap;
 }
 
-.texto-menu.oculto {
-  opacity: 0;
-  width: 0;
-  overflow: hidden;
-}
-
-.texto-menu.visivel {
-  opacity: 1;
-  width: auto;
-}
 
 
 

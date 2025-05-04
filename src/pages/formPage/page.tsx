@@ -3,7 +3,6 @@ import "./styles.css";
 import { MdAlternateEmail } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
 import { FiCreditCard } from "react-icons/fi";
-import { CiImageOn } from "react-icons/ci";
 import { MdHome } from "react-icons/md"
 import { TbMapPinCode } from "react-icons/tb"
 import { HiOutlineOfficeBuilding } from "react-icons/hi"
@@ -85,9 +84,7 @@ const CadastroFuncionario: React.FC = () => {
   };
 
   return (<>
-
-        <MenuLateral/>
-      
+    <MenuLateral/>
     <form className="form-funcionario" onSubmit={handleSubmit}>
       <h2>Cadastro de Funcionário</h2>
       <div className="container-img">

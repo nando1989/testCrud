@@ -24,14 +24,14 @@ const MenuLateral = () => {
         />
         <li>
           <Link to={`/cadastro`}>
+          <span className="texto-menu">Cadastrar</span>
             <GiArchiveRegister size={18} style={{ marginRight: 8 }} />
-            <span className="texto-menu">Cadastrar</span>
           </Link>
         </li>
         <li>
-          <Link to={`/usuarios`}>
+          <Link to={`/usuarios`}> 
+          <span className="texto-menu">Funcionarios</span>
             <CiUser size={18} style={{ marginRight: 8 }} />
-            <span className="texto-menu">Funcionarios</span>
           </Link>
         </li>
       </ul>
